@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Signup</title>
+  <title>Create account</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Signup page for new users -->
-  <h2>Signup</h2>
-  <form>
-    <label>Name:</label><br>
-    <input type="text"><br><br>
+  <div class="container">
+    <h2>Create account</h2>
 
-    <label>Email:</label><br>
-    <input type="email"><br><br>
+    <form>
+      <label>Username</label>
+      <input type="text" required>
 
-    <label>Password:</label><br>
-    <input type="password"><br><br>
+      <label>Email address</label>
+      <input type="email" required>
 
-    <button type="submit">Register</button>
-  </form>
+      <label>Password</label>
+      <input type="password" required>
+      <p class="hint">Use at least 8 characters.</p>
+
+      <button type="submit">Sign up</button>
+    </form>
+
+    <a href="login.html">Already have an account?</a>
+  </div>
 </body>
+
 </html>
