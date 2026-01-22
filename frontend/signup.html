@@ -9,19 +9,19 @@
   <div class="container">
     <h2>Create account</h2>
 
-    <form>
-      <label>Username</label>
-      <input type="text" required>
+    <form action="signup" method="post">
+  <label>Username</label>
+  <input type="text" name="name" required>
 
-      <label>Email address</label>
-      <input type="email" required>
+  <label>Email address</label>
+  <input type="email" name="email" required>
 
-      <label>Password</label>
-      <input type="password" required>
-      <p class="hint">Use at least 8 characters.</p>
+  <label>Password</label>
+  <input type="password" name="password" required>
 
-      <button type="submit">Sign up</button>
-    </form>
+  <button type="submit">Sign up</button>
+</form>
+
 
     <a href="login.html">Already have an account?</a>
   </div>
