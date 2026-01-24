@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/signup")
 public class SignupServlet extends HttpServlet {
 
-    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
@@ -21,7 +20,5 @@ public class SignupServlet extends HttpServlet {
         System.out.println("Name: " + name);
         System.out.println("Email: " + email);
         System.out.println("Password: " + password);
-
-        response.getWriter().println("Signup data received");
     }
 }
