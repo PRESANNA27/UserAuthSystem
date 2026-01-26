@@ -1,13 +1,9 @@
 package backend;
 
-import java.io.IOException;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
 
-@WebServlet("/signup")
 public class SignupServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -20,5 +16,11 @@ public class SignupServlet extends HttpServlet {
         System.out.println("Name: " + name);
         System.out.println("Email: " + email);
         System.out.println("Password: " + password);
+
+        response.setContentType("text/html");
+        PrintWriter out = response.getWriter();
+        out.println("<h2>Signup Successful</h2>");
+        out.println("<p>Name: " + name + "</p>");
+        out.println("<p>Email: " + email + "</p>");
     }
 }
