@@ -1,37 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Login</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="smart.css">
 </head>
 <body>
-  <div class="container">
-    <h2>Sign in</h2>
 
-    <form>
-      <label>Email address</label>
-      <input type="email" required>
+<div class="bg"></div>
 
-      <label>Password</label>
-      <input type="password" required>
+<div class="auth-wrapper">
+  <div class="auth-card fade-in">
+    <h1>Welcome Back</h1>
+    <p class="subtitle">Smart systems recognize you</p>
 
-      <button type="submit">Sign in</button>
-    </form>
-
-    <div class="divider">
-      <span>or</span>
-    </div>
-
-    <button class="google-btn">
-      Continue with Google
-    </button>
-
-    <button class="phone-btn" onclick="location.href='phone-login.html'">
-      Continue with Phone
-    </button>
-
-    <a href="signup.html">Create an account</a>
+    <form id="loginForm">
+  <div class="field">
+    <input type="email" id="email" required placeholder=" ">
+    <label>Email Address</label>
   </div>
-</body>
 
+  <div class="field">
+    <input type="password" id="password" required placeholder=" ">
+    <label>Password</label>
+  </div>
+  <div class="error-text" id="errorMsg"></div>
+
+
+  <button type="submit">
+    <span>Login</span>
+  </button>
+</form>
+
+
+    <p class="switch">
+      New user?
+      <a href="signup.html">Create account</a>
+    </p>
+  </div>
+</div>
+
+<script src="smart.js"></script>
+</body>
 </html>
