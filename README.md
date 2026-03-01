@@ -41,7 +41,17 @@ The system ensures secure password handling and authentication logic.
 
 ## 🏗️ System Architecture
 
-
+User → Registration/Login Form
+↓
+Server-side Validation
+↓
+Password Hashing
+↓
+Database Storage
+↓
+Session Authentication
+↓
+Access Control
 ---
 
 ## 🔐 Security Measures
