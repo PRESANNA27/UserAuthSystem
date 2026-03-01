@@ -41,3 +41,32 @@ The system ensures secure password handling and authentication logic.
 
 ## 🏗️ System Architecture
 
+
+---
+
+## 🔐 Security Measures
+
+- Password Hashing
+- Input Validation
+- Authentication Checks
+- Protected Routes
+- Secure Credential Storage
+
+---
+
+## 🛠️ Tech Stack
+
+- Python
+- SQL / Database
+- Backend Framework (if used: Flask / Django / Node)
+- HTML/CSS (if frontend included)
+
+---
+
+## 🚀 How To Run
+
+```bash
+git clone https://github.com/YOUR_USERNAME/User-Authentication-System.git
+cd User-Authentication-System
+pip install -r requirements.txt
+python app.py
